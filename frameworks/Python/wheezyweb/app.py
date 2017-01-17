@@ -161,4 +161,6 @@ app = WSGIApplication(
 
 if __name__ == '__main__':
     server.listen(("127.0.0.1", 8080))
+    server.set_access_logger(None)
+    server.set_error_logger(None)
     server.run(app)
